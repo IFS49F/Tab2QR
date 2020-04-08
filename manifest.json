@@ -3,7 +3,7 @@
   "name": "Tab2QR",
   "short_name": "Tab2QR",
   "author": "James Shih",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A minimalist browser extesion to send the page you are currently viewing to your mobile device.",
 
   "icons": {
@@ -18,6 +18,15 @@
     },
     "default_title": "Tab2QR",
     "default_popup": "popup.html"
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "mac": "MacCtrl+Q"
+      }
+    }
   },
 
   "permissions":[
