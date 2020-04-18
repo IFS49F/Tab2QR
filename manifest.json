@@ -5,6 +5,13 @@
   "author": "James Shih",
   "version": "2.1.2",
   "description": "A minimalist browser extesion to send the page you are currently viewing to your mobile device.",
+  "commands": {
+      "_execute_browser_action": {
+          "suggested_key": {
+              "default": "Ctrl+Alt+Q"
+          }
+      }
+  },
 
   "icons": {
     "128": "icon128.png",
