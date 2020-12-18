@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Tab2QR",
+  "short_name": "Tab2QR",
+  "author": "James Shih",
+  "version": "3.0.0",
+  "description": "A minimalist browser extesion to send the page you are currently viewing to your mobile device.",
+
+  "minimum_chrome_version": "80",
+
+  "icons": {
+    "128": "icons/icon128.png",
+    "48": "icons/icon48.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "38": "icons/icon38.png",
+      "19": "icons/icon19.png"
+    },
+    "default_title": "Tab2QR",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": ["activeTab", "downloads"]
+}
