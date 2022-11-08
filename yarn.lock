@@ -3008,13 +3008,13 @@ __metadata:
   linkType: hard
 
 "loader-utils@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "loader-utils@npm:2.0.0"
+  version: 2.0.3
+  resolution: "loader-utils@npm:2.0.3"
   dependencies:
     big.js: ^5.2.2
     emojis-list: ^3.0.0
     json5: ^2.1.2
-  checksum: a1c2e48781e1501e126a32c39bc1fb1a7e2f02bd99e5aeb8853ddaf3c121fffefcc4579367f97ca6890b58369e571af1c9ec82e4e20db238d560ab359ff25c33
+  checksum: 0dbfea564920d716db391220443c89b2fe43bc901b0f06b1dd971db6ba9d0c73f8cac145d0944e812b7b926ff15e0a2c7c33ee57213dfd93800f74414d6d61e3
   languageName: node
   linkType: hard
 
