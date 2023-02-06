@@ -17,6 +17,7 @@
     "dev": "vite",
     "serve:chromium": "web-ext run -t chromium --start-url \"about:blank\" --source-dir ./dist/",
     "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./dist/",
+    "lint": "web-ext lint --source-dir ./dist/",
     "package": "web-ext build --source-dir ./dist/"
   },
   "devDependencies": {

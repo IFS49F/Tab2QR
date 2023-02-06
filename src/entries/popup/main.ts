@@ -24,7 +24,7 @@ async function getCurrTabUrl() {
 
 async function genQrBlob(url: string, type: "svg" | "png") {
   switch (type) {
-    case "svg":
+    case "svg": {
       const svg = await toString(url, {
         type: "svg",
         margin: 0,
@@ -32,7 +32,8 @@ async function genQrBlob(url: string, type: "svg" | "png") {
       return new Blob([svg], {
         type: "image/svg+xml;charset=utf-8",
       });
-    case "png":
+    }
+    case "png": {
       const png = await toDataURL(url, {
         type: "image/png",
         width: 512,
@@ -40,6 +41,7 @@ async function genQrBlob(url: string, type: "svg" | "png") {
       return new Blob([dataURLToArrayBuffer(png)], {
         type: "image/png",
       });
+    }
   }
 }
 
