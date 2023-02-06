@@ -1,54 +1,38 @@
 {
   "name": "tab-2-qr",
-  "version": "3.0.0",
-  "description": "Send the page you are currently viewing to your mobile device.",
-  "repository": "IFS49F/Tab2QR",
-  "author": {
-    "name": "James Shih",
-    "url": "https://hyjk2000.github.io"
+  "version": "4.0.0",
+  "private": true,
+  "packageManager": "yarn@3.4.1",
+  "author": "James Shih",
+  "displayName": "Tab2QR",
+  "description": "A minimalist browser extension to send the page you are currently viewing to your mobile device.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IFS49F/Tab2QR.git"
   },
   "license": "MIT",
   "scripts": {
-    "start": "yarn webpack --watch",
-    "start:chrome": "yarn start --env chrome",
-    "build": "yarn webpack --env prod",
-    "build:chrome": "yarn build --env chrome",
-    "webpack": "yarn clean && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",
-    "clean": "rimraf dist/*"
-  },
-  "dependencies": {
-    "qrcode": "^1.4.4",
-    "webextension-polyfill": "^0.7.0"
+    "build": "tsc && vite build",
+    "watch": "vite build --watch",
+    "dev": "vite",
+    "serve:chromium": "web-ext run -t chromium --start-url \"about:blank\" --source-dir ./dist/",
+    "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./dist/",
+    "package": "web-ext build --source-dir ./dist/"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-typescript": "^7.12.7",
-    "@types/copy-webpack-plugin": "^6.3.0",
-    "@types/firefox-webext-browser": "^82.0.0",
-    "@types/html-webpack-plugin": "^3.2.4",
-    "@types/mini-css-extract-plugin": "^1.2.2",
-    "@types/qr-image": "^3.2.3",
-    "@types/qrcode": "^1.3.5",
-    "babel-loader": "^8.2.2",
-    "copy-webpack-plugin": "^7.0.0",
-    "core-js": "^3.8.1",
-    "cross-env": "^7.0.3",
-    "css-loader": "^5.0.1",
-    "html-webpack-plugin": "^4.5.0",
-    "html-webpack-tags-plugin": "^2.0.17",
-    "mini-css-extract-plugin": "^1.3.3",
-    "prettier": "^2.2.1",
-    "rimraf": "^3.0.2",
-    "style-loader": "^2.0.0",
-    "ts-node": "^9.1.1",
-    "tsconfig-paths": "^3.9.0",
-    "typescript": "^4.1.3",
-    "webpack": "^5.11.0",
-    "webpack-cli": "^4.2.0"
+    "@samrum/vite-plugin-web-extension": "^3.1.0",
+    "@types/chrome": "^0.0.212",
+    "@types/qrcode": "^1.5.0",
+    "@types/webextension-polyfill": "^0.10.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0",
+    "typescript": "^4.9.5",
+    "vite": "~4.1.1",
+    "web-ext": "^7.5.0"
   },
-  "browserslist": [
-    "chrome >= 80",
-    "firefox >= 72"
-  ]
+  "dependencies": {
+    "qrcode": "^1.5.1",
+    "webextension-polyfill": "^0.10.0"
+  }
 }

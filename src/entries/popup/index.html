@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tab2QR</title>
+  </head>
+  <body>
+    <svg class="hidden">
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        id="down-arrow"
+      >
+        <path
+          d="M472 313v139c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V313H0v139c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V313h-40z"
+        ></path>
+        <path
+          d="M352 235.716l-76 76V0h-40v311.716l-76-76L131.716 264 256 388.284 380.284 264z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        id="paste"
+      >
+        <path
+          d="M401.5 250.306V100c0-33.084-26.916-60-60-60h-65.427C267.818 16.719 245.575 0 219.5 0s-48.318 16.719-56.573 40H96.5c-33.084 0-60 26.916-60 60v312c0 33.084 26.916 60 60 60h129.439c8.255 23.278 30.489 40 56.573 40l132.989-.074c33.084 0 60-26.913 60-59.992V324.728L401.5 250.306zm5.856 62.619H381.5c-11.028 0-20-8.972-20-20v-26.117l45.856 46.117zM159.5 80h40V60c0-11.028 8.972-20 20-20s20 8.972 20 20v20h40v39h-120V80zm63 178.993V432h-126c-11.028 0-20-8.972-20-20V100c0-11.028 8.972-20 20-20h23v79h200V80h22c11.028 0 20 8.972 20 20v110.079L350.484 199H282.5c-33.084 0-60 26.913-60 59.993zm213 192.941c0 11.024-8.972 19.992-20.011 19.992L282.5 472c-11.028 0-20-8.969-20-19.993V258.993c0-11.024 8.972-19.993 20-19.993h39v53.926c0 33.084 26.916 60 60 60h54v99.008z"
+        ></path>
+      </symbol>
+    </svg>
+    <article>
+      <figure aria-label="QR code display">
+        <img src="" alt="" />
+      </figure>
+      <input type="url" id="content" autofocus aria-label="QR code content" />
+      <section>
+        <button type="button" class="copy png" aria-label="Copy PNG">
+          <svg class="icon" role="img">
+            <title>Copy</title>
+            <use xlink:href="#paste"></use>
+          </svg>
+          PNG
+        </button>
+        <button type="button" class="download png" aria-label="Download PNG">
+          <svg class="icon" role="img">
+            <title>Download</title>
+            <use xlink:href="#down-arrow"></use>
+          </svg>
+          PNG
+        </button>
+        <button type="button" class="download svg" aria-label="Download SVG">
+          <svg class="icon" role="img">
+            <title>Download</title>
+            <use xlink:href="#down-arrow"></use>
+          </svg>
+          SVG
+        </button>
+      </section>
+    </article>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
