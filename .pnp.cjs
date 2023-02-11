@@ -1437,10 +1437,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["cacheable-request", [\
-        ["npm:10.2.6", {\
-          "packageLocation": "./.yarn/cache/cacheable-request-npm-10.2.6-c9dd67e4da-273d6cbcec.zip/node_modules/cacheable-request/",\
+        ["npm:10.2.7", {\
+          "packageLocation": "./.yarn/cache/cacheable-request-npm-10.2.7-55f7290b84-25cfbe0cab.zip/node_modules/cacheable-request/",\
           "packageDependencies": [\
-            ["cacheable-request", "npm:10.2.6"],\
+            ["cacheable-request", "npm:10.2.7"],\
             ["@types/http-cache-semantics", "npm:4.0.1"],\
             ["get-stream", "npm:6.0.1"],\
             ["http-cache-semantics", "npm:4.1.1"],\
@@ -3120,7 +3120,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@sindresorhus/is", "npm:5.3.0"],\
             ["@szmarczak/http-timer", "npm:5.0.1"],\
             ["cacheable-lookup", "npm:7.0.0"],\
-            ["cacheable-request", "npm:10.2.6"],\
+            ["cacheable-request", "npm:10.2.7"],\
             ["decompress-response", "npm:6.0.0"],\
             ["form-data-encoder", "npm:2.1.4"],\
             ["get-stream", "npm:6.0.1"],\
